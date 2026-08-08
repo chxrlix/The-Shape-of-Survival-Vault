@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"297c168a466b80b1","type":"group","x":1960,"y":-560,"width":1317,"height":640,"label":"Crullfeld Labor Law"},
+		{"id":"44db237ab000b2be","x":1320,"y":-1274,"width":1280,"height":589,"type":"group","label":"Relevant Crullfeld Factory Info"},
+		{"id":"2282339408d132ad","x":2680,"y":-1274,"width":990,"height":540,"type":"group","label":"Engine Lifecycle"},
+		{"id":"b74e7611f642ec49","type":"text","text":"**Crullfeld Propulsion Plant Divisions**\nA: Engine Manufacturing\n- Builds the rotors for new engines\n- Does contained stress tests\n- Repairs broken engines\n\nB: Casing and Propellor Manufacturing\n- Molds new casing shells\n- Cuts new Propellors\n\nC: Welding, Maintenance and Bulk Repair\n- Welds together engines, propellors, and casing\n- Reports broken engines to send to A Plants\n- Cleans all engine components\n- Repairs casing and propellor breakages","x":1340,"y":-1212,"width":420,"height":463,"color":"6"},
+		{"id":"0524abb44162e12d","type":"text","text":"**Plant Counts**\nA - 5\nB - 10\nC - 20","x":1640,"y":-1254,"width":140,"height":129,"color":"6"},
+		{"id":"d722856d19ec4cd9","type":"text","text":"**Crullfeld C Plant Positions**\nHauler - Operates forklifts and cargo trucks on the factory floor to transport materials and resources to areas of operation that need it.\n\nScrubber - Scrubs all engine components free of silica and soot. Every employee in a given factory is trained for this position.\n\nWelder - Welds together new engines and repairs casings/propellors as needed. Every employee in a given factory is trained for this position. Non-Welders are supplied with a quick action weld kit for emergencies.\n\nOverseer - Looks over the structural integrity/cleanliness of the engines and sends the rest of the team. \n\nFactory Manager - Manages their wing of the factory. Will take information from overseers. ","x":1800,"y":-1212,"width":440,"height":507,"color":"6"},
+		{"id":"dc0c9ba6df87c3e0","type":"text","text":"**Plant C-18 Daily Schedule**\n06:00\n- Factory Opening\n07:00\n- Overseer Inspection/Gear Up\n07:30\n- Scrub Duty (If no clean engines)\n- Base Production\n11:30\n- Mandatory Break\n12:30\n- Base Production\n16:30\n- Release\n\n\n\n\n\n","x":2280,"y":-1212,"width":300,"height":407,"color":"6"},
+		{"id":"98eaf6af3a345a3f","type":"text","text":"Engine is removed, disassembled, and parts are split across B and C class plants.","x":3040,"y":-1006,"width":250,"height":114,"color":"2"},
+		{"id":"931f3cc82cab884f","type":"text","text":"Engine is inspected","x":3040,"y":-814,"width":250,"height":60,"color":"2"},
+		{"id":"3228ba65d69a8d94","type":"text","text":"Engine is repaired","x":3360,"y":-814,"width":250,"height":60,"color":"2"},
+		{"id":"8380f938b0a031db","type":"text","text":"Casing is repaired","x":3400,"y":-864,"width":250,"height":60,"color":"2"},
+		{"id":"1ec60edc40e10d36","type":"text","text":"Engine Order is placed from Astrakhan","x":2700,"y":-1194,"width":250,"height":60,"color":"2"},
+		{"id":"4f8ca0236788ac9f","x":2700,"y":-1054,"width":250,"height":60,"color":"2","type":"text","text":"Engine is built"},
+		{"id":"64bb40314d3342bd","type":"text","text":"Engine is unrepairable and sent to scrapyard.","x":2700,"y":-814,"width":250,"height":60,"color":"2"},
+		{"id":"b365e701cb9fd7b5","type":"text","text":"Engine is sent to Astrakhan","x":3040,"y":-1254,"width":250,"height":60,"color":"2"},
+		{"id":"b812a1e3656ab37c","type":"text","text":"Engine on Astrakhan burns out","x":3040,"y":-1144,"width":250,"height":60,"color":"2"},
+		{"id":"c71fcc44027a7a61","type":"text","text":"**Mandatory Breaks**\nAll employees must take their government mandated breaks at the exact scheduled time. They must stay within the confines of the break area.","x":1980,"y":-540,"width":353,"height":159,"color":"3"}
+	],
+	"edges":[
+		{"id":"3d6bfe8f0bb5b68a","fromNode":"b812a1e3656ab37c","fromSide":"bottom","toNode":"98eaf6af3a345a3f","toSide":"top"},
+		{"id":"f9289ac0e1e0d77b","fromNode":"98eaf6af3a345a3f","fromSide":"bottom","toNode":"931f3cc82cab884f","toSide":"top"},
+		{"id":"e991a248150981cf","fromNode":"931f3cc82cab884f","fromSide":"left","toNode":"64bb40314d3342bd","toSide":"right"},
+		{"id":"4f217277d8f9d6de","fromNode":"931f3cc82cab884f","fromSide":"right","toNode":"8380f938b0a031db","toSide":"left"},
+		{"id":"281edb50dfce43d9","fromNode":"931f3cc82cab884f","fromSide":"right","toNode":"3228ba65d69a8d94","toSide":"left"},
+		{"id":"93687087eca9828f","fromNode":"b365e701cb9fd7b5","fromSide":"bottom","toNode":"b812a1e3656ab37c","toSide":"top"},
+		{"id":"12d3bdfa2122a2f5","fromNode":"8380f938b0a031db","fromSide":"right","toNode":"b365e701cb9fd7b5","toSide":"right"},
+		{"id":"808e82fdc27f6ba7","fromNode":"3228ba65d69a8d94","fromSide":"right","toNode":"b365e701cb9fd7b5","toSide":"right"},
+		{"id":"17ed46673fc14255","fromNode":"1ec60edc40e10d36","fromSide":"bottom","toNode":"4f8ca0236788ac9f","toSide":"top"},
+		{"id":"d76aa487ce955c82","fromNode":"4f8ca0236788ac9f","fromSide":"right","toNode":"b365e701cb9fd7b5","toSide":"left"}
+	]
+}
